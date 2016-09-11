@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.panlijun</groupId>
+    <artifactId>test-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <artifactId>test-service</artifactId>
+  <name>test-service</name>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>3.8.1</junit.version>
+    <spring.version>3.2.9.RELEASE</spring.version>
+  </properties>
+  <dependencies>
+  <!-- junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- spring -->
+    <dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-core</artifactId>
+	  <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-context</artifactId>
+	  <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-aop</artifactId>
+	  <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.panlijun</groupId>
+		<artifactId>test-service-api</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+  </dependencies>
+</project>
